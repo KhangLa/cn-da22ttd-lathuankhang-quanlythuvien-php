@@ -1,0 +1,21 @@
+# Bật Rewrite Engine
+RewriteEngine On
+
+# Nếu file hoặc thư mục tồn tại, truy cập trực tiếp
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Chuyển tất cả request về index.php
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+# Ngăn truy cập file .htaccess
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Bảo vệ các file config
+<FilesMatch "^(config\.php|\.env)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
