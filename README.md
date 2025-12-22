@@ -8,7 +8,7 @@
   - [Giới Thiệu Về Repositories của tôi](#giới-thiệu-về-repositories-của-tôi)
   - [Cài đặt](#cài-đặt)
   - [Sử dụng](#sử-dụng)
-  - [Thông tin liên lạc](#thông-tin-liên-)
+  - [Thông tin liên lạc](#thông-tin-liên-lạc)
 ---
 
 ## Giới thiệu
